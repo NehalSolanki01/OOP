@@ -45,5 +45,74 @@ print(movie1.verdict())  # Output: Interstellar is Excellent
 print(movie1.overall_rating)  # Output: 9.5
 ```
 
-_____________________________________________________________________________________________________________________________________________________________________________________________________________________
+____________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+# 2. Library and Book Management System
+
+This Python program provides a library management system, allowing users to add, remove, borrow, and return books. The system consists of two main classes: `Books` and `Library`. It demonstrates object-oriented programming concepts like encapsulation and class interaction.
+
+## Features
+
+- **Book Class** (`Books`): Represents a book with attributes such as title, author, page count, and year published.
+- **Library Class** (`Library`): Manages a collection of books and supports various actions:
+  - **Add Book**: Adds a book to the library.
+  - **Remove Book**: Removes a book from the library.
+  - **Borrow Book**: Allows a user to borrow a book if it’s available.
+  - **Return Book**: Returns a borrowed book to the library.
+  - **List Available Books**: Displays a list of books currently available in the library.
+
+## Code Structure
+
+- **Books Class**:
+  - `__init__`: Initializes the book’s attributes.
+  
+- **Library Class**:
+  - `__init__`: Initializes the library’s name and list of books.
+  - `add_book`: Adds a book to the library.
+  - `remove_book`: Removes a book from the library.
+  - `borrow_book`: Marks a book as borrowed if it’s available.
+  - `return_book`: Marks a borrowed book as returned.
+  - `list_available_books`: Lists all books currently available in the library.
+
+## Usage
+
+1. **Create Book Objects**: Instantiate `Books` objects with title, author, page count, and year published.
+2. **Add Books to Library**: Use `add_book` method to add books to the library.
+3. **Borrow/Return Books**: Use `borrow_book` and `return_book` methods to manage book borrowing.
+4. **List Available Books**: Use `list_available_books` to display all books currently available.
+
+### Example
+
+```python
+# Create book objects
+book1 = Books("The Great Gatsby", "F. Scott Fitzgerald", 180, 1925)
+book2 = Books("1984", "George Orwell", 328, 1949)
+
+# Create library
+my_library = Library("Bibliotheek Loosduinen")
+
+# Add books to library
+my_library.add_book(book1)
+my_library.add_book(book2)
+
+# List available books
+my_library.list_available_books()
+
+# Borrow a book
+print(my_library.borrow_book("1984"))
+
+# List available books after borrowing
+my_library.list_available_books()
+
+# Return the borrowed book
+print(my_library.return_book("1984"))
+
+# List available books after returning
+my_library.list_available_books()
+```
+
+## License
+
+This project is open for personal and educational use.
 
