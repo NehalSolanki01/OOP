@@ -1,5 +1,4 @@
 # OOP -Object-oriented Programming
-Here's a `README.md` file for your Movie Rating application:
 
 # 1. Movie Rating System
 
